@@ -31,6 +31,7 @@ class CurrencyServerAppApplicationTests {
 	void getCurrencyWithInValidCode(){
 		String code = "INR1";
 		Assertions.assertThrows(CurrencyNotFoundException.class,()->currencyService.getCurrency(code));
+		//test cases
 	}
 
 }
