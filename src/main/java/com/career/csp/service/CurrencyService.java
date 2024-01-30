@@ -38,7 +38,7 @@ public class CurrencyService {
         Currency currency = currencyMap.get(code);
         if (currency == null) {
             log.error("Currency not found with code : {}",code);
-            throw new RuntimeException("Currency not found with code : " + code);
+            throw new CurrencyNotFoundException("Currency not found with code : " + code);
         }
         log.info("Currency found with code : {} is : {}",code,currency.name());
         return currency;

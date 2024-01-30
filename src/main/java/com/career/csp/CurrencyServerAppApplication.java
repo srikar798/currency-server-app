@@ -17,6 +17,6 @@ public class CurrencyServerAppApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-
+		// currency server app is started
 	}
 }
